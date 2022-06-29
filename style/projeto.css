@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    color: #00afb9;
+    font-family: 'Dosis', sans-serif;
+}
+footer a{
+    text-decoration: none;
+}
+.text-center{
+    text-decoration: none;
+    width: auto;
+    height: 50px;
+    background: #8d99ae;
+}
+.conteudo{
+    padding: 40px 0;
+    background: #2b2d42;
+}
+.conteudo p{
+    font-size: 24px;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    border-top: 1px solid #edf2f4;
+    border-bottom: 1px solid #edf2f4;
+    
+    margin: 15px 55px ;
+}
