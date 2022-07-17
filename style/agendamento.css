@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
@@ -12,11 +13,10 @@
 #navbarNav {
 	font-weight: 500;
 	font-family: "Poppins", sans-serif;
-    color:rgb(173, 173, 173);
 	height: 55px;
 }
 #navbarNav .nav-item:hover {
-	font-weight: 550;
+	font-weight: 600;
 	color:rgb(255, 255, 255);
   	text-decoration: none;
 }
@@ -253,4 +253,77 @@ a {
         display: contents;
     }
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    background-image: url(/img/demon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+}
+input, label {
+    display: block;
+    width: 100%;
+}
+input:focus, label:focus{
+    outline: none;
+}
+.main-container{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.hall-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+.space{
+    margin-right: 2.5%;
+}
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+input:focus{
+    border-color: #00bbf9;
+}
+input[type="submit"]{
+    background-color: #00bbf9;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    margin: 25px 0;
+
+>>>>>>> 2413178c95277f73f02629cceb3dae465cfb77e1
 }

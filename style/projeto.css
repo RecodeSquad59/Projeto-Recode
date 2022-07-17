@@ -1,22 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     color: #00afb9;
     font-family: 'Dosis', sans-serif;
 }
-
-#navbarNav {
-	font-weight: 500;
-	font-family: "Poppins", sans-serif;
-    color:rgb(202, 202, 202);
-	height: 55px;
-}
-#navbarNav .nav-item:hover {
-	font-weight: 550;
-	color:rgb(255, 255, 255);
-  	text-decoration: none;
+footer a{
+    text-decoration: none;
 }
 .text-center{
     text-decoration: none;
@@ -36,6 +27,7 @@ body{
     border-bottom: 1px solid #edf2f4;
     margin: 15px 55px ;
 }
+<<<<<<< HEAD
 
 /*        FOOTER       */
 
@@ -290,3 +282,5 @@ a {
         margin-left: 35%;
     }
 }
+=======
+>>>>>>> 2413178c95277f73f02629cceb3dae465cfb77e1

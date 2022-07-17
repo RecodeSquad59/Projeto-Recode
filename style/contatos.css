@@ -13,11 +13,10 @@
 #navbarNav {
 	font-weight: 500;
 	font-family: "Poppins", sans-serif;
-    color:rgb(202, 202, 202);
 	height: 55px;
 }
 #navbarNav .nav-item:hover {
-	font-weight: 550;
+	font-weight: 600;
 	color:rgb(255, 255, 255);
   	text-decoration: none;
 }
