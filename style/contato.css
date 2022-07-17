@@ -7,8 +7,9 @@
 body{
     margin: 0;
     padding: 0;
-    color: #00afb9;
+    color: #c1db29;
     font-family: 'Dosis', sans-serif;
+    background-color: #c1db29;
 }
 .conteudo{
     padding: 10px 0;
@@ -25,4 +26,24 @@ body{
 section.module.content{
     padding: 40px 0;
     background: #2b2d42;
+}
+#card7 {
+    align-self: center;
+    width: 800px;
+    background-color: #2b2d42;
+    transform: translate(10%, -10%);
+}
+.card-body {
+    background-color: #2b2d42;
+    transform: translate(10%, -10%);
+    display: inline;
+    
+}
+.col-md-4 {
+    background-color: #2b2d42;
+    transform: translate(10%, -10%);
+    display: inline;
+}
+.card-text {
+    color: #c1db29;
 }

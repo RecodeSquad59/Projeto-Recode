@@ -1,33 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
-body{
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  
+    font-family: "Poppins", sans-serif;
     margin: 0;
-    padding: 0;
-    color: #00afb9;
-    font-family: 'Dosis', sans-serif;
-}
-footer a{
-    text-decoration: none;
-}
-.text-center{
-    text-decoration: none;
-    width: auto;
-    height: 50px;
-    background: #8d99ae;
-}
-.conteudo{
-    padding: 40px 0;
-    background: #2b2d42;
-}
-.conteudo p{
-    font-size: 24px;
-    font-family: 'Dosis', sans-serif;
-    color: #fff;
-    border-top: 1px solid #edf2f4;
-    border-bottom: 1px solid #edf2f4;
-    margin: 15px 55px ;
+    padding: 0; 
 }
 
+#navbarNav {
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+	height: 55px;
+}
+#navbarNav .nav-item:hover {
+	font-weight: 600;
+	color:rgb(255, 255, 255);
+  	text-decoration: none;
+}
+.back {
+    background-image: url(../img/PCBstiloFlip.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.card-registration .select-arrow {
+    top: 13px;
+}
+.linha {
+    color: #FAAF00;
+}
+.img-fluid {
+    height: 100%;
+}
+#cardR {
+    background: rgb(255,213,103);
+    background: linear-gradient(90deg, rgba(255,213,103,1) 0%, rgba(255,255,255,1) 60%);
+}
 /*        FOOTER       */
 
 #footer-logo ul li a {
@@ -38,7 +53,6 @@ footer a{
     text-decoration: none;
     font-weight:400;
 }
-
 #footer-logo {
 	margin-left: 10%;
 	text-align: left;
@@ -49,7 +63,7 @@ footer a{
 	
 }	
 #footer-last {
-	text-decoration: none;
+	
 	margin-right: 17%;
 	text-align: end;	
 }
@@ -79,7 +93,7 @@ p {
  font-weight:300
 }
 h4 {
- font-family:"Poppins",sans-serif;
+ font-family: "Poppins",sans-serif;
  margin:0;
  font-weight:400;
  padding:0;
@@ -93,17 +107,20 @@ a {
 }
 
 .footer-big {
- padding:30px 0 0 0
+ padding:30px 0 0 0;
+ 
+ 
 }
 .footer-big .footer-widget {
- margin-bottom:40px
+ margin-bottom:40px;
+ 
 }
 .footer--light {
- background:#e7e8ed
+ background:#e7e8edd5;
+ 
 }
 .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
- color:#969696;
- text-decoration: none;
+ color:#969696
 }
 .footer-menu {
     padding-left:48px
@@ -131,8 +148,6 @@ a {
  background:#141618fa;
  text-align:center;
  padding: 12px;
- border-width: 50px;
- stroke-width: 50px;
 } 
 .mini-footer p {
 	
@@ -141,12 +156,11 @@ a {
  font-size:15px;
  color:rgb(201, 201, 201);
  text-align:center;
- 
 }
 .mini-footer p a {
  color:rgb(88, 103, 221);
  font-weight:600;
- text-decoration: none;
+ 
 }
 .mini-footer p a:hover {
  color:rgb(52, 191, 163);
@@ -176,20 +190,12 @@ a {
 .widget-about .contact-details li a {
  color:#5867dd
 }
-@media (max-width:1740px) {
-    .row .btn-group {
-        margin-left: 33%;
-    }
-   
-}
+
 @media (max-width:1397px) {
     .img-fluid {
         height: 100% !important;
         width: 100%;
 
-    }
-    .row .btn-group {
-        margin-left: 27%;
     }
 }
 @media (max-width:1200px) {
@@ -210,24 +216,7 @@ a {
     margin: 0;
     margin-left: 20%;
 }
-.row .btn-group {
-    margin-left: 32%;
-}
-}
-@media (max-width:992px) {
-    #card-titulo {
-        display: none;
-    }
-    #main {
-        margin-top: 15rem;
-    }
-    #navbarNav {
-        height: 30%;
-    }
-    .row .btn-group {
-        margin-left: 36%;
-    }
-    
+
 }
 @media (max-width:800px) {
     .container .row {
@@ -241,19 +230,19 @@ a {
     }
     #footer.middle {
         display: table-cell;
-        float: right;
-        
-        
+        float: right;  
     }
+
     .col-sm-2 {
         text-align: center;
     }
-    #footer-last {
-        
+    #footer-last {  
         margin-left: 0;
     }
-}
-@media (max-width: 768px) {
+   
+   
+  
+@media (max-width: 766px) {
     #footer.middle {
         
     }
@@ -262,22 +251,5 @@ a {
         margin-right: 5%;
         display: contents;
     }
-    .row .btn-group {
-        margin-left: 40%;
-    }
-}   
-@media (max-width: 578px) {
-    .row .btn-group {
-        margin-left: 39%;
-    }
 }
-@media (max-width: 486px) {
-    .row .btn-group {
-        margin-left: 37%;
-    }
-}
-@media (max-width: 448px, min-width: 420px)  {
-    .row .btn-group {
-        margin-left: 35%;
-    }
 }
