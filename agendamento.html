@@ -23,7 +23,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
       rel="stylesheet"
       />
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      
       
       
     
@@ -87,23 +87,25 @@
                     <div class="card-body p-md-5 text-black">
                       <h3 class="mb-5 text-uppercase">Agende Sua Coleta Gratuita</h3>
                       <div class="row">
-                        <div class="col-md-6 mb-4">
+                        <div class="col-md-6 mb-4 sucess">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1m" class="form-control form-control-" />
+                            <input type="text" id="nome" class="form-control form-control-" />
                             <label class="form-label" for="form3Example1m">Nome Completo</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
-                          <div class="form-outline">
-                            <input type="tel" id="form3Example1n" class="form-control form-control-md" />
-                            <label id="tel" class="form-label" for="(form3Example1n)" > Telefone</label>
+                          <div class="form-outline error">
+                            <input type="tel" id="phone" class="form-control form-control-md" maxlength="14"/>
+                            <label id="tel" class="form-label" for="(form3Example1n)" > <small>Telefone</small></label>
                           </div>
                         </div>
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="email" id="form3Example97" class="form-control form-control-md" />
-                        <label class="form-label" for="form3Example97">E-mail:</label>
+                        <input type="e-mail" id="email" class="form-control form-control-md" />
+                        <label class="form-label" for="email">E-mail:</label>
+                        <i><img class="img-sucess" src="./ico/sucess.svg" alt=""></i>
+                        <i><img class="img-error" src="./ico/error.svg" alt=""></i>
                       </div>
 
                       <hr class="linha">
@@ -111,33 +113,34 @@
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1m1" class="form-control form-control-md" />
+                            <input type="select" id="cidade" class="form-control form-control-md" />
                             <label class="form-label" for="form3Example1m1">Cidade: </label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
-                              <input type="text" id="form3Example1m1" class="form-control form-control-md" />
-                              <label class="form-label" for="form3Example1m1">Estado: </label>
+                              <input type="text" id="estado" class="form-control form-control-md" />
+                              <label class="form-label" id="estado" for="form3Example1m1">Estado: </label>
+                            </select>   
                             </div>
                           </div>
                       </div>
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="" id="form3Example1m1" class="form-control form-control-md" />
+                            <input type="" id="cep" class="form-control form-control-md" maxlength="10"/>
                             <label class="form-label" for="form3Example1m1">Cep:</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="form-outline">
-                              <input type="text" id="form3Example1m1" class="form-control form-control-md" />
+                              <input type="text" id="complemento" class="form-control form-control-md" />
                               <label class="form-label" for="form3Example1m1" >Complemento</label>
                             </div>
                           </div>
                       </div>
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example8" class="form-control form-control-md" />
+                        <input type="text" id="endereço" class="form-control form-control-md" />
                         <label class="form-label" for="form3Example8">Endereço</label>
                       </div>
 
@@ -145,17 +148,17 @@
 
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
-                          <input type="date" id="form3Example1m1" class="form-control form-control-md" />
+                          <input type="date" id="data" class="form-control form-control-md" />
                           <label class="form-label" for="form3Example1m1" >Agendar Data</label>
                         </div>
                       </div>
                       <div class="form-outline mb-4">
-                        <textarea rows="4" id="form3Example97" class="form-control form-control-lg" cols="66" name="comentarios" maxlength="300"> </textarea>
+                        <textarea rows="4" id="comentarios" class="form-control form-control-lg" cols="66" name="comentarios" maxlength="300"> </textarea>
                         <label class="form-label" for="form3Example97">Comentarios</label>
                       </div>
                       <div class="d-flex justify-content-end pt-3">
-                        <button type="button" class="btn btn-light btn-lg">Limpar</button>
-                        <button type="button" class="btn btn-warning btn-lg ms-2">Enviar</button>
+                        <button id="btn-limpar" type="button" class="btn btn-light btn-lg">Limpar</button>
+                        <button id="btn-enviar" type="submit" class="btn btn-warning btn-lg ms-2">Enviar</button>
                       </div>
                     </div>
                   </div>
@@ -172,19 +175,14 @@
     <div class="footer-big">
       <!-- start .container -->
       <div class="container">
-        <div class="row">
+        <div id="footer-body"class="row">
           <div class="col-sm-12 col-md-5">
             <div id="footer-logo"class="footer-widget">
               <div class="widget-about">
-                <img src="#" alt="" class="img-fluidF">
-                <p></p>
-                <ul class="contact-details">
-                  
-                  <li>
-                    <span class="icon-envelope-open"></span>
-                    <a href="mailto:support@aazztech.com">contato@donate-tech.com.br</a>
-                  </li>
-                </ul>
+                <img src="./ico/LOGO-DONATECH beta2 font7.svg" alt="" class="img-fluidF">
+                
+                <a href="mailto:support@aazztech.com">contato@donate-tech.com.br</a>
+               
               </div>
             </div>
             <!-- Ends: .footer-widget -->
@@ -272,6 +270,7 @@
 
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
+    <script src="./js/agendamento.js"></script>
       
 </body>
 </html>

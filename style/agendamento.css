@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
@@ -10,14 +9,18 @@
     padding: 0; 
 }
 
+
+ 
 #navbarNav {
-	font-weight: 500;
+	font-weight: 550;
 	font-family: "Poppins", sans-serif;
-	height: 55px;
+    color:rgb(202, 202, 202);
+    height: 55px;
+	
 }
-#navbarNav .nav-item:hover {
+#navbarNav u li a:hover {
 	font-weight: 600;
-	color:rgb(255, 255, 255);
+	color:#46bbff!important;
   	text-decoration: none;
 }
 .back {
@@ -35,38 +38,57 @@
     top: 13px;
 }
 .linha {
-    color: #FAAF00;
+    color: #cf31ff;
 }
 .img-fluid {
     height: 100%;
 }
 #cardR {
-    background: rgb(255,213,103);
-    background: linear-gradient(90deg, rgba(255,213,103,1) 0%, rgba(255,255,255,1) 60%);
+    background: rgb(136, 103, 255);
+    background: linear-gradient(90deg, rgb(37, 0, 170) 0%, rgba(255, 255, 255, 0.89) 70%);
+    
+    
 }
+#btn-enviar {
+    color: #c5c4c4;
+    background-color: #5867dd;
+    border: 2px solid white;
+}
+#btn-enviar:hover {
+    background-color: #394cd6;
+    border: 2px solid #46bbff;
+    color: #ffffff;
+}
+#btn-limpar {
+    border: 2px solid #5867dd;
+    color:#898b96
+}
+#btn-limpar:hover {
+    border: 2px solid #46bbff;
+    color: #000;
+}
+
+.back .form-outline i .img-sucess {
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    visibility: hidden;
+} 
+.back .form-outline i .img-error {
+    height: 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    visibility: visible;
+}  
+
 /*        FOOTER       */
 
 #footer-logo ul li a {
     text-decoration: none;
-}
-#footer-logo ul li a:hover {
-    color:rgb(52, 191, 163);
-    text-decoration: none;
-    font-weight:400;
-}
-#footer-logo {
-	margin-left: 10%;
-	text-align: left;
-}
-#footer-logo p {
-	margin-left: 17%;
-	text-align: left;
-	
-}	
-#footer-last {
-	
-	margin-right: 17%;
-	text-align: end;	
+    display: block;
+    text-align: center;
 }
 
 ul {
@@ -100,31 +122,73 @@ h4 {
  padding:0;
  color:#363940
 }
-a {
- color:#5867dd
-}
 .no-padding {
  padding:0!important
 }
 
 .footer-big {
  padding:30px 0 0 0;
- 
- 
 }
 .footer-big .footer-widget {
  margin-bottom:40px;
- 
 }
 .footer--light {
  background:#e7e8edd5;
  
 }
+#footer-body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.widget-about {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.widget-about img {
+    
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+    height: 160px;
+    width: 180px;
+    
+}
+.widget-about a {
+    display: block;
+    color: #969696;
+    font-size: large;
+    font-weight:700;
+    justify-content: center;
+    text-align: center;
+}
+#footer-middle {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+      
+}
+#footer-last {
+    font-weight: 700;
+    font-size: 1.5rem;
+	display: block;
+    justify-content: center;
+	text-align: center;	
+   
+}
+
 .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
  color:#969696
 }
 .footer-menu {
-    padding-left:48px
+    padding-right:2rem;
+    text-align: center;
 }
 .footer-menu ul li a {
  font-size:15px;
@@ -136,6 +200,9 @@ a {
 .footer-menu ul li a:hover {
  color:#5867dd;
  text-decoration: none;
+}
+.widget-about a:hover {
+    color:#5867dd;
 }
 .footer-menu--1 {
  width:100%
@@ -164,20 +231,14 @@ a {
  
 }
 .mini-footer p a:hover {
- color:rgb(52, 191, 163);
+ color: #46bbff;
  text-decoration: none;
  font-weight:600;
  
 }
-.widget-about img {
- display:block;
- margin-bottom:30px
-}
-.widget-about p {
- font-weight:400
-}
 .widget-about .contact-details {
- margin:30px 0 0 0
+ justify-content: center;
+ text-align: center;
 }
 .widget-about .contact-details li {
  margin-bottom:10px
@@ -192,13 +253,7 @@ a {
  color:#5867dd
 }
 
-@media (max-width:1397px) {
-    .img-fluid {
-        height: 100% !important;
-        width: 100%;
 
-    }
-}
 @media (max-width:1200px) {
  .footer-menu {
   padding-left:0;
@@ -208,7 +263,6 @@ a {
  
  }
  #footer-logo {
-	margin-right: 10%;
 	align-items: center;
     text-align: center;
     justify-content: baseline;
@@ -225,6 +279,9 @@ a {
         align-items: center;
         display: flex;
         
+    }
+    .ol, ul {
+        padding-left: 0!important;
     }
     .footer.menu {
         float: right;
@@ -253,77 +310,4 @@ a {
         display: contents;
     }
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Dosis', sans-serif;
-    box-sizing: border-box;
-    border: none;
-}
-body{
-    background-image: url(/img/demon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -150px;
-}
-input, label {
-    display: block;
-    width: 100%;
-}
-input:focus, label:focus{
-    outline: none;
-}
-.main-container{
-    width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-}
-.main-container h1{
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.6rem;
-}
-form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.full-box{
-    flex: 1 1 100%;
-    position: relative;
-}
-.hall-box{
-    flex: 1 1 45%;
-    position: relative;
-}
-.space{
-    margin-right: 2.5%;
-}
-label{
-    font-weight: bold;
-    font-size: .8rem;
-}
-input{
-    border-bottom: 2px solid #323232;
-    padding: 10px;
-    font-size: .9rem;
-    margin-bottom: 40px;
-}
-input:focus{
-    border-color: #00bbf9;
-}
-input[type="submit"]{
-    background-color: #00bbf9;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    height: 40px;
-    cursor: pointer;
-    margin: 25px 0;
-
->>>>>>> 2413178c95277f73f02629cceb3dae465cfb77e1
 }
