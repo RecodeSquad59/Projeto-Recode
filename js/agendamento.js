@@ -23,3 +23,36 @@ cep.addEventListener('keypress',() => {
 
     numericOnly = true
 })
+
+function apagarTexto (){
+    document.getElementById('nome').value='';
+    document.getElementById('phone').value='';
+    document.getElementById('cep').value='';
+    document.getElementById('cidade').value='';
+    document.getElementById('endereço').value='';
+    document.getElementById('data').value='';
+    document.getElementById('comentarios').value='';
+    
+
+};
+
+const email = document.getElementById('email')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    checkInputs()
+})
+
+function checkInputs() {
+
+    const emailValue = email.value.trim()
+
+    if (emailValue === '') {
+
+        errorValidation(email, 'Email Invalido!')
+
+    } else {
+
+    }
+}

@@ -69,19 +69,27 @@
 }
 
 .back .form-outline i .img-sucess {
-    height: 15px;
+    height: 20px;
     position: absolute;
     bottom: 10px;
     right: 10px;
     visibility: hidden;
 } 
 .back .form-outline i .img-error {
-    height: 15px;
+    height: 20px;
     position: absolute;
     bottom: 10px;
     right: 10px;
-    visibility: visible;
+    visibility: hidden;
+    
+}
+#email .sucess {
+    border: 2px solid #4eca64;
 }  
+#email .error {
+    border: 2px solid #db5a5a;
+}
+
 
 /*        FOOTER       */
 
