@@ -32,21 +32,19 @@
     font-size: 1rem;
     line-height: 2.15;
     padding-left: .75em;
-    padding-right: .75em;
+    padding-right: .75em;  
 }
-.card-registration .select-arrow {
-    top: 13px;
-}
+
 .linha {
     color: #cf31ff;
 }
 .img-fluid {
-    height: 100%;
+    height: 100% auto;
 }
 #cardR {
     background: rgb(136, 103, 255);
-    background: linear-gradient(90deg, rgb(37, 0, 170) 0%, rgba(255, 255, 255, 0.89) 70%);
-    
+    background: linear-gradient(90deg, rgb(37, 0, 170) 0%, rgba(255, 255, 255, 0.89) 80%);
+    margin-top: 6%!important;
     
 }
 #btn-enviar {
@@ -66,28 +64,6 @@
 #btn-limpar:hover {
     border: 2px solid #46bbff;
     color: #000;
-}
-
-.back .form-outline i .img-sucess {
-    height: 20px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    visibility: hidden;
-} 
-.back .form-outline i .img-error {
-    height: 20px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    visibility: hidden;
-    
-}
-#email .sucess {
-    border: 2px solid #4eca64;
-}  
-#email .error {
-    border: 2px solid #db5a5a;
 }
 
 
@@ -263,6 +239,11 @@ h4 {
 
 
 @media (max-width:1200px) {
+
+.card-registration .form-control {
+    color:#46bbff!important;
+    font-weight: 400;
+}      
  .footer-menu {
   padding-left:0;
   padding-right: 0;

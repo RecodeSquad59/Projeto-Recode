@@ -35,24 +35,3 @@ function apagarTexto (){
     
 
 };
-
-const email = document.getElementById('email')
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    checkInputs()
-})
-
-function checkInputs() {
-
-    const emailValue = email.value.trim()
-
-    if (emailValue === '') {
-
-        errorValidation(email, 'Email Invalido!')
-
-    } else {
-
-    }
-}
