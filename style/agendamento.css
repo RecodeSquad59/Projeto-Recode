@@ -22,6 +22,9 @@
 	font-weight: 600;
 	color:#46bbff!important;
   	text-decoration: none;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 .back {
     background-image: url(../img/PCBstiloFlip.jpg);
@@ -44,8 +47,23 @@
 #cardR {
     background: rgb(136, 103, 255);
     background: linear-gradient(90deg, rgb(37, 0, 170) 0%, rgba(255, 255, 255, 0.89) 80%);
-    margin-top: 6%!important;
+    margin-top: 6%!important;  
+    max-width: 75rem;
+}
+#cadastro  {
+    padding-top: 5rem!important;
     
+}
+.g-0 {
+    height: 80vh;
+}
+.d-none img {
+    height: 80vh;
+    width: 100%;   
+}
+.card-body h3 {
+    font-size:  max(27px, 1.6vw);
+    font-weight: 600;
 }
 #btn-enviar {
     color: #c5c4c4;
@@ -182,11 +200,17 @@ h4 {
  transition:.3s
 }
 .footer-menu ul li a:hover {
- color:#5867dd;
+ color:#853bcc;
  text-decoration: none;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
 }
 .widget-about a:hover {
-    color:#5867dd;
+    color:#853bcc;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 .footer-menu--1 {
  width:100%
@@ -218,6 +242,9 @@ h4 {
  color: #46bbff;
  text-decoration: none;
  font-weight:600;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
  
 }
 .widget-about .contact-details {
@@ -286,17 +313,20 @@ h4 {
     #footer-last {  
         margin-left: 0;
     }
-   
-   
   
 @media (max-width: 766px) {
-    #footer.middle {
-        
-    }
     .col-sm-2 {
         
         margin-right: 5%;
         display: contents;
     }
-}
+    .card-body h3 {
+        font-size:  min(27px, 4.8vw);
+        
+    }
+    #cadastro  {
+        padding-top: 2rem!important;
+        
+    }
+} 
 }

@@ -9,7 +9,6 @@
   padding: 0; 
 }
 
-
 #navbarNav {
 	font-weight: 550;
 	font-family: "Poppins", sans-serif;
@@ -21,6 +20,9 @@
 	font-weight: 600;
 	color:#46bbff!important;
   	text-decoration: none;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out
 }
 
 .row .bg-white .img-fluid {
@@ -43,7 +45,6 @@
 	float: right;
 }
 
-
 #titulo {
 	
 	text-shadow: 3px 3px 2px rgb(73, 73, 73);
@@ -59,7 +60,6 @@
 }
 
 #text1 {
-	
 	font-size: 1.9rem;
 }
 #text2 {
@@ -68,11 +68,10 @@
 	font-size: 1.3rem;
 }
 
-
 .btn-primary {
-  height: 33px;
-  
+  height: 33px; 
 }
+
 #card-titulo {
   margin-top: 5%;
   margin-bottom: 1.5%;
@@ -208,11 +207,14 @@ h4 {
  transition:.3s
 }
 .footer-menu ul li a:hover {
- color:#5867dd;
+ color:#853bcc;
  text-decoration: none;
 }
 .widget-about a:hover {
-    color:#5867dd;
+    color:#853bcc;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 .footer-menu--1 {
  width:100%
@@ -243,6 +245,9 @@ h4 {
 .mini-footer p a:hover {
  color: #46bbff;
  font-weight:600;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
 }
 .widget-about .contact-details {
  justify-content: center;
@@ -306,12 +311,7 @@ h4 {
         margin-left: 0;
     }
    
-   
-  
 @media (max-width: 766px) {
-    #footer.middle {
-        
-    }
     .col-sm-2 {
         
         margin-right: 5%;

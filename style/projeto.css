@@ -18,6 +18,9 @@
 	font-weight: 600;
 	color:#46bbff!important;
   	text-decoration: none;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out
 }
 .text-center{
     text-decoration: none;
@@ -154,11 +157,17 @@ h4 {
  transition:.3s
 }
 .footer-menu ul li a:hover {
- color:#5867dd;
+ color:#853bcc;
  text-decoration: none;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
 }
 .widget-about a:hover {
-    color:#5867dd;
+    color:#853bcc;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 .footer-menu--1 {
  width:100%
@@ -189,6 +198,9 @@ h4 {
 .mini-footer p a:hover {
  color: #46bbff;
  font-weight:600;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
 }
 .widget-about .contact-details {
  justify-content: center;
@@ -251,13 +263,8 @@ h4 {
     #footer-last {  
         margin-left: 0;
     }
-   
-   
   
 @media (max-width: 766px) {
-    #footer.middle {
-        
-    }
     .col-sm-2 {
         
         margin-right: 5%;
