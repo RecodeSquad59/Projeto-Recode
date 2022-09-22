@@ -10,22 +10,148 @@
 }
 
 
- 
-#navbarNav {
-	font-weight: 550;
-	font-family: "Poppins", sans-serif;
-    color:rgb(202, 202, 202);
-    height: 55px;
+/* -----  Header ----- */
+.mobile {
+	display: none;
+}
+li, a {
+	list-style: none;
+}
+  
+#Nav {
+	width: 100%;
+	background-color: #050505;
+	display: block;
+	height: 65px;
+	text-align: center;
+	position: fixed;  
+}
+  
+#Nav > ul {
+	display: flex;
+	margin-bottom: 0 !important;
+    margin-right: 10vw;
+    float: right;
+    line-height: 40px;
+}
+  
+#Nav > ul > li {	
+    
+	padding: 0px 3%;
+    
+}  
+  
+#Nav > ul > li > a {
+	color: rgb(215, 215, 215);
+	font-size: 16px;
+    font-weight: 600;
+	padding: 3px;
+    text-shadow: 3px 3px 3px #050505;
+}
+  
+#Nav  ul  li  a:hover {
 	
-}
-#navbarNav u li a:hover {
-	font-weight: 600;
 	color:#46bbff!important;
-  	text-decoration: none;
-    transition: color 900ms;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+	font-size: 16px;
+	padding: 3px;
+	transition: color 600ms;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
 }
+.navbar.ativo {
+    background-color: #0202027e!important;
+}  
+
+@media  (max-width: 1200px){
+
+	.desk {
+	  display: none!important;
+	 }
+	.mobile {
+	  display: inline;
+	  color: rgb(215, 215, 215);
+	}
+	
+	.menu-icon {
+	  float: right;
+      margin-right: 3%;
+	  cursor: pointer;
+	  padding: 10px;
+	  color: rgb(215, 215, 215);
+      
+	}
+    .menu-icon i {
+        transition: 0.5s;
+        font-size: 32px;
+    } 
+	.btn-ham {
+  	  height: 28px;
+  	  width: 20px;
+  	  color: #e8eff8;
+  	  background-color: transparent;
+  	  border: none;
+  	  cursor: pointer;
+    }
+    .btn-ham:hover{
+  	  font-size: 16px;
+  	  color:#46bbff!important;
+  	  transition: color 900ms;
+  	  transition-duration: 0.5s;
+  	  transition-timing-function: ease-in-out;
+      
+    }
+    
+    .listmenu {
+  	    display: none;
+  	    position: absolute;
+  	    margin-top: 10px;
+  	    padding-left: 0;
+  	    cursor: pointer;
+        animation: anime;
+        animation-duration: 1.8s;
+    }
+    @keyframes anime {
+        from{opacity: 0;}
+        to{opacity: 0.9;}
+    }
+    .listmenu > ul {
+  	    position: fixed;
+  	    width: 100vw;
+  	    display: block;
+  	    text-align: right;
+  	    left: 0vw;
+        
+    }
+    .listmenu ul li a {
+  	    color: rgb(215, 215, 215);
+  	    display: block;
+  	    background-color: #0202027e;
+  	    font-size: 16px;
+  	    font-weight: 600;
+  	    text-decoration: none;
+        padding-right: 4%!important;
+        padding-top: 5px!important;
+        padding-bottom: 5px!important;
+        text-shadow: 3px 3px 3px #050505;
+    }
+    .listmenu > ul > li > a:hover {
+        
+        color:#46bbff!important;
+  	    transition: color 600ms;
+  	    transition-duration: 0.5s;
+  	    transition-timing-function: ease-in-out;
+    }
+    
+    .open {
+  	    display: block;
+    }
+	 
+	.content {
+	  display: none;
+	} 
+}	 
+ /* ------ header end ----- */ 
+
 .back {
     background-image: url(../img/PCBstiloFlip.jpg);
       background-repeat: no-repeat;

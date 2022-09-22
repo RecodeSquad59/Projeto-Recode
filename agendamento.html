@@ -34,45 +34,55 @@
  
     <!--                    HEADER   START                  -->
 	<header>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1 bg-black">
-      <div class="container">
-       <button
-           type="button"
-           class="navbar-toggler"
-           data-bs-target="#navbarNav"
-           data-bs-toggle="collapse"
-           aria-controls="navbarNav"
-           aria-expanded="false"
-           aria-label="Toggle Navbar"
-       >
-           <span class="navbar-toggler-icon"></span>
-       </button>
-
-       <div class="collapse navbar-collapse" id="navbarNav">
-           <div class="mx-auto"></div>
-           <u class="navbar-nav text-decoration-none">
-               <li class="nav-item">
-                   <a href="index.html" class="nav-link text-white">Sobre</a>
-               </li>
-               <li class="nav-item">
-                   <a href="projeto.html" class="nav-link text-white">Projeto</a>
-               </li>
-               <li class="nav-item">
-                   <a href="Contatos.html" class="nav-link text-white">Contato</a>
-               </li>
-               <li class="nav-item">
-                  <a href="Agendamento.html" class="nav-link text-white">Agendar</a>
-              </li>
-           </u>
-       </div>
-      </div>
-  </nav>
+    <nav id="Nav"class="navbar bg-black fixed-top navbar-light opacity-90">
+      <ul class="desk">
+          <li class="logo">
+            <a href="#"><img src="" /></a>
+          </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link text-white">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="projeto.html" class="nav-link text-white">Projeto</a>
+            </li>
+            <li class="nav-item">
+                <a href="Contatos.html" class="nav-link text-white">Contato</a>
+            </li>
+            <li class="nav-item">
+               <a href="Agendamento.html" class="nav-link text-white">Agendar</a>
+           </li>
+        </ul>
+        
+          <!-- Responsividade mobile da Navbar -->
+        <div class="mobile">    
+            <div  class="menu-icon">
+             <button class="btn-ham" onclick="menuShow()"><a hfef=""><i id="hamburguer" class="fa-solid fa-bars fa-2x"></i></a> </button>
+                 <div id="menumobile" class="listmenu">   
+                  <ul class="navbar-nav text-decoration-none">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projeto.html" class="nav-link text-white">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contatos.html" class="nav-link text-white">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="Agendamento.html" class="nav-link text-white">Agendar</a>
+                   </li>
+                </ul>
+              </div>   
+            </div>   
+        </div>
+    </nav> 
 	</header>
   
 	<!--                    HEADER   END               -->
 
   <!--                    MAIN   START               -->
-    <section class="back">
+  <main id="agenda">
+    <section  class="back">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col">
@@ -148,7 +158,8 @@
           </div>
         </div>
       </section>
-      <!--                    MAIN   END               -->
+    </main>  
+  <!--                MAIN   END                 -->
 
   <!-----------      Footer Start      ------------>
   <footer class="footer-area footer--light">

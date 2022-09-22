@@ -22,7 +22,8 @@
   	text-decoration: none;
     transition: color 900ms;
     transition-duration: 0.5s;
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
+    z-index: 10000;
 }
 
 .row .bg-white .img-fluid {
