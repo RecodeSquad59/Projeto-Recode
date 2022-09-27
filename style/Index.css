@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #00afb9;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+#navbarNav {
+	font-weight: 550;
+	font-family: "Poppins", sans-serif;
+    color:rgb(202, 202, 202);
+    height: 55px;
+	
+}
+#navbarNav u li a:hover {
+	font-weight: 600;
+	color:#46bbff!important;
+  	text-decoration: none;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out; 
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    display: block;
+    background-color: #fff;
+}
+.container{
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 900;
+    color: #000;
+}
+section.module p{
+    margin-bottom: 40px;
+}
+section.module:last-child{
+    margin-bottom: 0;
+}
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.module.content{
+    padding: 40px 0;
+    background: #2b2d42;
+}
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backgroud-size: cover;
+    -moz-backgroud-size: cover;
+    -o-backgroud-size: cover;
+}
+section.module.parallax:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(0,0,0,0) 0, rgb(0,0,0,0) 40%, #000 100%);
+    z-index: 8;
+}
+section.module.parallax-6{
+    background-image: url("https://www.selecta-es.com.br/wp-content/uploads/2019/09/23.JornalMetro-Solidariedade-Site.png");
+}
+section.module.parallax h1{
+    color: #f8edeb;
+    text-align: center;
+    font-size: 75px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+#screen{
+    padding: 12px;
+    background-color: #34a0a4;
+    mix-blend-mode: screen;
+    margin: 25%;
+}
+.container p{
+    font-size: 24px;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+}   
+.text-center{
+    text-decoration: none;
+    width: auto;
+    height: 50px;
+    background: #8d99ae;
+}
+.button{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    outline: 2px solid #fff;
+    padding: 10px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+
+/*        FOOTER       */
+
+#footer-logo ul li a {
+   
+    display: block;
+    text-align: center;
+}
+
+ul {
+ padding:0;
+ margin:0
+ 
+}
+li {
+ list-style:none
+}
+a:focus,a:hover {
+
+ -webkit-transition:.3s ease;
+ -o-transition:.3s ease;
+ transition:.3s ease
+}
+a:focus {
+ outline:0
+}
+
+p {
+ font-size:16px;
+ line-height:30px;
+ color:#898b96;
+ font-weight:300
+}
+h4 {
+ font-family: "Poppins",sans-serif;
+ margin:0;
+ font-weight:400;
+ padding:0;
+ color:#363940
+}
+.no-padding {
+ padding:0!important
+}
+
+.footer-big {
+ padding:30px 0 0 0;
+}
+.footer-big .footer-widget {
+ margin-bottom:40px;
+}
+.footer--light {
+ background:#e7e8edd5;
+ 
+}
+#footer-body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.widget-about {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.widget-about img {
+    
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+    height: 160px;
+    width: 180px;
+    
+}
+.widget-about a {
+    text-decoration: none;
+    display: block;
+    color: #969696;
+    font-size: large;
+    font-weight:700;
+    justify-content: center;
+    text-align: center;
+}
+#footer-middle {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+      
+}
+#footer-last {
+    font-weight: 700;
+    font-size: 1.5rem;
+	display: block;
+    justify-content: center;
+	text-align: center;	
+   
+}
+
+.footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+ color:#969696;
+ text-decoration: none;
+}
+.footer-menu {
+    padding-right:2rem;
+    text-align: center;
+}
+.footer-menu ul li a {
+ font-size:15px;
+ line-height:32px;
+ -webkit-transition:.3s;
+ -o-transition:.3s;
+ transition:.3s
+}
+.footer-menu ul li a:hover {
+ color:#853bcc;
+ text-decoration: none;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
+}
+.widget-about a:hover {
+    color:#853bcc;
+    transition: color 900ms;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.footer-menu--1 {
+ width:100%
+}
+.footer-widget-title {
+ line-height:42px;
+ margin-bottom:10px;
+ font-size:18px
+}
+.mini-footer {
+ background:#141618fa;
+ text-align:center;
+ padding: 12px;
+} 
+.mini-footer p {
+
+ margin:5px;
+ line-height:26px;
+ font-size:15px;
+ color:rgb(201, 201, 201);
+ text-align:center;
+}
+.mini-footer p a {
+ color:rgb(88, 103, 221);
+ font-weight:600;
+ text-decoration: none;
+}
+.mini-footer p a:hover {
+ color: #46bbff;
+ font-weight:600;
+ transition: color 900ms;
+ transition-duration: 0.5s;
+ transition-timing-function: ease-in-out;
+}
+.widget-about .contact-details {
+ justify-content: center;
+ text-align: center;
+}
+.widget-about .contact-details li {
+ margin-bottom:10px
+}
+.widget-about .contact-details li:last-child {
+ margin-bottom:0
+}
+.widget-about .contact-details li span {
+ padding-right:12px
+}
+.widget-about .contact-details li a {
+ color:#5867dd
+}
+
+
+@media (max-width:1200px) {
+ .footer-menu {
+  padding-left:0;
+  padding-right: 0;
+  text-align: center;
+  justify-content: center;
+ 
+ }
+ #footer-logo {
+	align-items: center;
+    text-align: center;
+    justify-content: baseline;
+}
+#footer-last {
+    margin: 0;
+    margin-left: 20%;
+}
+
+}
+@media (max-width:800px) {
+    .container .row {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        
+    }
+    .ol, ul {
+        padding-left: 0!important;
+    }
+    .footer.menu {
+        float: right;
+    }
+    #footer.middle {
+        display: table-cell;
+        float: right;  
+    }
+
+    .col-sm-2 {
+        text-align: center;
+    }
+    #footer-last {  
+        margin-left: 0;
+    }
+  
+@media (max-width: 766px) {
+    .col-sm-2 {
+        
+        margin-right: 5%;
+        display: contents;
+    }
+}
+}
