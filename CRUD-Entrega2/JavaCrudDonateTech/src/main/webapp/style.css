@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-sefif;
+}
+body {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, rgb(37, 0, 170) 5%, rgba(255, 255, 255, 0.89) 100%);
+	
+}
+img {
+	height: 250px;
+	width: 200px;
+	position: relative;
+	margin-left: 10%;
+}
+h1 {
+	width:30%;
+	height: 10vh;
+	padding: 25px;
+	margin-left: 1%;
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+}
+h3 {
+	width:30%;
+	height: 10vh;
+	padding: 25px;
+	margin-left: 1%;
+	text-align: center;
+	color: #e8eff8 ;
+}
+.botao0 {
+	width: 200px;
+	height: 30px;
+	display: block;
+	align-items: center;
+	cursor: pointer;
+	margin-left: 10%;
+	outline: 2px solid #46bbff;
+	border-radius: 5px;
+	border:none;
+}
+.botao0 a{
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.botao1 {
+	
+	text-decoration: none;
+	background-color: #66bbff;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+.botao2{
+	margin: 0px 0px 0px 10px;
+	text-decoration: none;
+	background-color: #d51213;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+#tabela {
+	margin-top:30px;
+	border-collapse: collapse;
+	border: 2px solid #fff;
+}
+#tabela th {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+	background-color: #5867dd;
+	color: #fff;
+	text-align: center;
+	border: 2px solid #fff;
+}
+#tabela td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+	color: #e8eff8;
+}

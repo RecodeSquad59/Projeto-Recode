@@ -1,303 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/contatos.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    
-    
-    
-    <title>Donate-Tech</title>
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+
+
+  <title>Donate-Tech</title>
+
 </head>
+
 <body>
   <style>
     body {
       background-image: url(./img/stylecodeedit.jpg);
-	    background-repeat: no-repeat;
+      background-repeat: no-repeat;
       background-size: cover;
-      
+
     }
   </style>
   <!--                    HEADER                    -->
-	<header>
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1 bg-black">
-      <div class="container">
-       <button
-           type="button"
-           class="navbar-toggler"
-           data-bs-target="#navbarNav"
-           data-bs-toggle="collapse"
-           aria-controls="navbarNav"
-           aria-expanded="false"
-           aria-label="Toggle Navbar"
-       >
-           <span class="navbar-toggler-icon"></span>
-       </button>
 
-       <div class="collapse navbar-collapse" id="navbarNav">
-           <div class="mx-auto"></div>
-           <u class="navbar-nav text-decoration-none">
-               <li class="nav-item">
-                   <a href="index.html" class="nav-link text-white">Sobre</a>
-               </li>
-               <li class="nav-item">
-                   <a href="projeto.html" class="nav-link text-white">Projeto</a>
-               </li>
-               <li class="nav-item">
-                   <a href="Contatos.html" class="nav-link text-white">Contato</a>
-               </li>
-               <li class="nav-item">
+  <body>
+    <header>
+      <nav id="Nav" class="navbar bg-black fixed-top navbar-light opacity-90">
+        <ul class="desk">
+          <li class="logo">
+            <a href="#"><img src="" /></a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-white">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="projeto.html" class="nav-link text-white">Projeto</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contatos.html" class="nav-link text-white">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="Agendamento.html" class="nav-link text-white">Agendar</a>
+          </li>
+        </ul>
+
+        <!-- Responsividade mobile da Navbar -->
+        <div class="mobile">
+          <div class="menu-icon">
+            <button class="btn-ham" onclick="menuShow()"><a hfef=""><i id="hamburguer"
+                  class="fa-solid fa-bars fa-2x"></i></a> </button>
+            <div id="menumobile" class="listmenu">
+              <ul class="navbar-nav text-decoration-none">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link text-white">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="projeto.html" class="nav-link text-white">Projeto</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Contatos.html" class="nav-link text-white">Contato</a>
+                </li>
+                <li class="nav-item">
                   <a href="Agendamento.html" class="nav-link text-white">Agendar</a>
-              </li>
-           </u>
-       </div>
-      </div>
-  </nav>
-	</header>
-	<!--                    HEADER  END                -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--                    HEADER  END                -->
 
-  
 
-	<!--                    MAIN    START                -->
+
+    <!--                    MAIN    START                -->
     <main>
       <div class="container-fluid">
         <div id="main" class="px-lg-5">
-  
-         <!-- For demo purpose -->
-         <div id="card-titulo"class="card bg-dark text-white">
-          <img src="./img/pexels-fauxels-3184418.jpg" class="card-img" alt="Home">
-          <div id="titulo"class="card-img-overlay">
-            <h1 class="card-title">Donate-Tech</h1>
-            <h2 id="text1" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
-            <h4 id="text2" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
-          </div>
-         </div>
-         <!-- End -->
-  
-        <div class="row">
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Vinicius Simão de Melo</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card"class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous2.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Adriana Teixeira de Carvalho</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card"class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Rodrigo Barbosa Covinha</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card"class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous2.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Gabriel Araújo do Nascimento</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card"class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Edson Rafael de C. Oliveira</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card"class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-  
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous2.png" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Wellington Maciel Rocha</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card"class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-        <!-- Gallery item -->
-        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-          <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt="" class="img-fluid card-img-top">
-            <div class="p-4">
-              <h5> <a href="#" class="text-dark">Ralston Richardeson P. Rosa</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div id="box-card" class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
-                  <button type="button" class="btn btn-sm btn-outline-primary"><i class="bi bi-linkedin"></i></button>
-                  <button type="button" id="web" class="btn btn-sm btn-outline-info"><i class="bi bi-globe2"></i></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End -->
-    </main>    
 
-  <!--                    MAIN     END               -->
-  <!----------- Footer Start------------>
-  <footer class="footer-area footer--light">
-    <div class="footer-big">
-      <!-- start .container -->
-      <div class="container">
-        <div id="footer-body"class="row">
-          <div class="col-sm-12 col-md-5">
-            <div id="footer-logo"class="footer-widget">
-              <div class="widget-about">
-                <img src="./ico/LOGO-DONATECH beta2 font7.svg" alt="" class="img-fluidF">
-                <a href="mailto:support@aazztech.com">contato@donate-tech.com.br</a>
+          <!-- For demo purpose -->
+          <div id="card-titulo" class="card bg-dark text-white">
+            <img src="./img/pexels-fauxels-3184418.jpg" class="card-img" alt="Home">
+            <div id="titulo" class="card-img-overlay">
+              <h1 class="card-title">Donate-Tech</h1>
+              <h2 id="text1" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+              <h4 id="text2" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+            </div>
+          </div>
+          <!-- End -->
+
+          <div class="row">
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Vinicius Simão de Melo</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- Ends: .footer-widget -->
-          </div>
-          <!-- end /.col-md-4 -->
-          
-  
-          <div class="col-sm-2 col-sm-2">
-            <div id="footer-middle" class="footer-widget">
-              <div class="footer-menu">
-                
-                <ul>
-                  <li>
-                    <a href="./index.html">Sobre</a>
-                  </li>
-                  <li>
-                    <a href="./projeto.html">Projeto</a>
-                  </li>
-                  <li>
-                    <a href="./Contatos.html">Contato</a>
-                  </li>
-                  <li>
-                    <a href="./Agendamento.html">Agendar</a>
-                  </li>
-                  
-                </ul>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous2.png" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Adriana Teixeira de Carvalho</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- end /.footer-menu -->
             </div>
-            <!-- Ends: .footer-widget -->
-          </div>
-          <!-- end /.col-lg-3 -->
-  
-          <div class="col-sm-6  col-md-5">
-            <div id="footer-last"class="footer-widget">
-              <div class="footer-menu no-padding">
-                
-                <ul>
-                  <li>
-                    <a href="#">Em construção</a>
-                  </li>
-                  <li>
-                    <a href="#">Em construção</a>
-                  </li>
-                  <li>
-                    <a href="#">Em construção</a>
-                  </li>
-                  <li>
-                    <a href="#">X</a>
-                  </li>
-                  <li>
-                </ul>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Rodrigo Barbosa Covinha</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- end /.footer-menu -->
             </div>
-            <!-- Ends: .footer-widget -->
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous2.png" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Gabriel Araújo do Nascimento</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Edson Rafael de C. Oliveira</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous2.png" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Wellington Maciel Rocha</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="./img/anonymous.jpg" alt=""
+                  class="img-fluid card-img-top">
+                <div class="p-4">
+                  <h5> <a href="#" class="text-dark">Ralston Richardeson P. Rosa</a></h5>
+                  <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                  <div id="box-card"
+                    class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-dark"><i class="bi bi-github"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><i
+                          class="bi bi-linkedin"></i></button>
+                      <button type="button" id="web" class="btn btn-sm btn-outline-info"><i
+                          class="bi bi-globe2"></i></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+    </main>
+
+    <!--                    MAIN     END               -->
+    <!----------- Footer Start------------>
+    <footer class="footer-area footer--light">
+      <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+          <div id="footer-body" class="row">
+            <div class="col-sm-12 col-md-5">
+              <div id="footer-logo" class="footer-widget">
+                <div class="widget-about">
+                  <img src="./ico/LOGO-DONATECH beta2 font7.svg" alt="" class="img-fluidF">
+                  <a href="mailto:support@aazztech.com">contato@donate-tech.com.br</a>
+                </div>
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-md-4 -->
+
+
+            <div class="col-sm-2 col-sm-2">
+              <div id="footer-middle" class="footer-widget">
+                <div class="footer-menu">
+
+                  <ul>
+                    <li>
+                      <a href="./index.html">Sobre</a>
+                    </li>
+                    <li>
+                      <a href="./projeto.html">Projeto</a>
+                    </li>
+                    <li>
+                      <a href="./Contatos.html">Contato</a>
+                    </li>
+                    <li>
+                      <a href="./Agendamento.html">Agendar</a>
+                    </li>
+
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-lg-3 -->
+
+            <div class="col-sm-6  col-md-5">
+              <div id="footer-last" class="footer-widget">
+                <div class="footer-menu no-padding">
+
+                  <ul>
+                    <li>
+                      <a href="#">Em construção</a>
+                    </li>
+                    <li>
+                      <a href="#">Em construção</a>
+                    </li>
+                    <li>
+                      <a href="#">Em construção</a>
+                    </li>
+                    <li>
+                      <a href="#">X</a>
+                    </li>
+                    <li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- Ends: .col-lg-3 -->
+
           </div>
-          <!-- Ends: .col-lg-3 -->
-  
+          <!-- end /.row -->
         </div>
-        <!-- end /.row -->
+        <!-- end /.container -->
       </div>
-      <!-- end /.container -->
-    </div>
-    <!-- end /.footer-big -->
-  
-    <div class="mini-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="copyright-text">
-              <p>
-                Copyright © 2022 <a href="#">Donate-Tech</a>
-              </p>
+      <!-- end /.footer-big -->
+
+      <div class="mini-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>
+                  Copyright © 2022 <a href="#">Donate-Tech</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!----------- Footer End------------>
-    
-</body>
+    </footer>
+    <!----------- Footer End------------>
+    <script src="./js/navbar.js"></script>
+  </body>
+
 </html>
