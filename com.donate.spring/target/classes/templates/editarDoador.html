@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/agendar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+
+
+
+
+    <title>Donate-tech</title>
+</head>
+
+<body>
+
+    <!--                    HEADER   START                  -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark">
+            <a href="#" class="nav-brand fs-3 ms-3 text-decoration-none ">Home</a>
+            <button type="button" class="navbar-toggler me-3 text-white" data-bs-target="#btn"
+                data-bs-toggle="collapse">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="btn">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item ms">
+                        <a th:href="@{/doadores}" class="nav-link mx-3 text-white fs-6">Doadores</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--                    HEADER   END               -->
+
+    <!--                    MAIN   START               -->
+    <main id="agenda">
+        <section class="back">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                        <div id="cardR" class="card card-registration my-4">
+                            <div class="row g-0">
+                                <div class="col-xl-6 d-none d-xl-block">
+                                    <img src="../static/ImgFormulario3.jpg" alt="Sample photo" class="img-fluid"
+                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                </div>
+                                <div id="cadastro" class="col-xl-6">
+                                    <div class="card-body p-md-5 text-black">
+                                        <form th:action="@{/doador/{id}(id=doaodr.id)}" th:object="${doador}" method="post">
+                                            <h3 class="mb-5 text-uppercase">Edite Seu Cadastro</h3>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4 sucess">
+                                                    <div class="form-outline">
+                                                        <input type="text" id="nome" class="form-control form-control-" th:field="*{nomeDoador}"/>
+                                                        <label class="form-label" for="form3Example1m">Nome Completo</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline error">
+                                                        <input type="tel" id="phone" class="form-control form-control-md"
+                                                            maxlength="14" th:field="*{telDoador}"/>
+                                                        <label id="tel" class="form-label" for="(form3Example1n)">
+                                                            <small>Telefone</small></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <hr class="linha">
+    
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="select" id="cidade"
+                                                            class="form-control form-control-md" th:field="*{cidadeDoador}"/>
+                                                        <label class="form-label" for="form3Example1m1">Cidade: </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+    
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="form-outline">
+                                                        <input type="" id="cep" class="form-control form-control-md"
+                                                            maxlength="10" th:field="*{cepDoador}" />
+                                                        <label class="form-label" for="form3Example1m1">Cep:</label>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="endereço" class="form-control form-control-md" th:field="*{enderecoDoador}" />
+                                                <label class="form-label" for="form3Example8">Endereço</label>
+                                            </div>
+    
+                                            <hr class="linha">
+    
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-outline">
+                                                    <input type="date" id="data" class="form-control form-control-md" th:field="*{dataRetirada}" />
+                                                    <label class="form-label" for="form3Example1m1">Agendar Data</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-outline mb-4">
+                                                <textarea rows="4" id="form3Example97" class="form-control form-control-lg"
+                                                    cols="66" name="comentarios" maxlength="300" th:field="*{comentarios}"> </textarea>
+                                                <label class="form-label" for="form3Example97">Comentarios</label>
+                                            </div>
+                                            <div class="d-flex justify-content-end pt-3">
+                                                <button onClick="apagarTexto()" id="btn-limpar" type="button" value="Limpar"
+                                                    class="btn btn-light btn-lg">Limpar</button>
+                                                <button id="btn-enviar" type="submit"
+                                                    class="btn btn-warning btn-lg ms-2">Enviar</button>
+                                            </div>
+                                        </div>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--                MAIN   END                 -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/agendamento.js"></script>
+
+</body>
+
+</html>

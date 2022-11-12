@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>doadores</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark">
+        <a href="#" class="nav-brand fs-3 ms-3 text-decoration-none ">Home</a>
+        <button type="button" class="navbar-toggler me-3 text-white" data-bs-target="#btn" data-bs-toggle="collapse">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="btn">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item ms">
+                    <a th:href="@{/doadores}" class="nav-link mx-3 text-white fs-6">Doadores</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <h1>Lista de doadores</h1>
+        </div>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nome</th>
+                    <th>cidade</th>
+                    <th>cep</th>
+                    <th>retirada</th>
+                    <th>Edit/Delet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="doadores : ${doadores}">
+                    <td th:text="${doadores.nomeDoador}"></td>
+                    <td th:text="${doadores.cidadeDoador}"></td>
+                    <td th:text="${doadores.cepDoador}"></td>
+                    <td th:text="${doadores.dataRetirada}"></td>
+                    <td>
+                        <a th:href="@{/doador/editarDoador/{id}(id=${doador.id})}" class="btn btn-info">Editar</a>
+                        <a th:href="@{/doador/{id}(id=${doador.id})}" class="btn btn-danger">Deletar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
